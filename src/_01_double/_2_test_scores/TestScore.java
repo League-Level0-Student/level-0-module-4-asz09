@@ -7,7 +7,7 @@ public class TestScore {
 		int score = Integer.parseInt(JOptionPane.showInputDialog("What is your test score?"));
 		
 		if (score >= 80){
-		JOptionPane.showMessageDialog(null,("Great!"));
+		JOptionPane.showMessageDialog(null,("Cool, Rock on!!"));
 		}
 		else if(score >= 70) {
 			JOptionPane.showMessageDialog(null,("Not bad!!"));
