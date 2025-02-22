@@ -29,7 +29,7 @@ public class RedSquare {
 		}
 		}
 		else {
-            JOptionPane.showMessageDialog(null, "No shape was drawn!");
+            drawBlueSquare();
         }
 		
 		// 1. Run the program and notice no shape is drawn.
