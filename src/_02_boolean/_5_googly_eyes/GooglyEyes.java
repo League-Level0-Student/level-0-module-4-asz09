@@ -54,11 +54,19 @@ public class GooglyEyes extends PApplet {
 
     }
 
-    
+    int pupilX;
+    int pupilY;
+   
     @Override
     public void draw() {
     	image(face, 0,0);
-        ellipse(200,300,140,100);
+    	fill(255,255,255);
+        ellipse(200,290,140,100);
+        ellipse(450,290, 140, 100);
+     pupilX = (mouseX+200)/2; 
+        pupilY = (mouseY+290)/2;
+        fill(0,0,0);
+        ellipse(pupilX,pupilY,100,100);
     }
 
     static public void main(String[] args) {
