@@ -66,7 +66,28 @@ public class GooglyEyes extends PApplet {
      pupilX = (mouseX+200)/2; 
         pupilY = (mouseY+290)/2;
         fill(0,0,0);
-        ellipse(pupilX,pupilY,100,100);
+        int minX=170;
+	    int minY=260;
+	    int maxX=230;
+	    int maxY=320;
+	        if(pupilX<minX) {
+	        pupilX=minX;
+	        }
+	        if(pupilX>maxX) {
+	        	pupilX=maxX;
+	        }
+	        if(pupilY<minY) {
+		        pupilY=minY;
+		        }
+		        if(pupilY>maxY) {
+		        	pupilY=maxY;
+		        }
+        ellipse(pupilX,pupilY,100,100); 
+        ellipse(pupilX+250,pupilY,100,100);
+	 
+        //System.out.println(mouseX);
+      //  System.out.println(mouseY);
+      
     }
 
     static public void main(String[] args) {
