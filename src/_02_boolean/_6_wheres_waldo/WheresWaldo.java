@@ -42,15 +42,16 @@ public class WheresWaldo extends PApplet {
     static final int HEIGHT = 400;
 
     PImage waldo;
-
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
+       
     }
 
     @Override
     public void setup() {
-        
+    	
+        waldo = loadImage("images/819TInppvbL._AC_SL1001_.jpg");
     }
 
     @Override
