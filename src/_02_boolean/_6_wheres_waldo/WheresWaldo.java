@@ -51,16 +51,36 @@ public class WheresWaldo extends PApplet {
     @Override
     public void setup() {
     	
-        waldo = loadImage("images/819TInppvbL._AC_SL1001_.jpg");
+        waldo = loadImage("waldo.jpg");
+        waldo.resize(WIDTH, HEIGHT);
+        background(waldo);
     }
 
     @Override
     public void draw() {
-        
+ 	    int minX=392;
+	    int minY=224;
+	    int maxX=401;
+	    int maxY=272;
+   if (mousePressed){
+	   System.out.println(mouseX+" "+mouseY );
+	   if(mouseX>=minX) {
+		   if(mouseY>=minY) {
+			   if(mouseX<=maxX) {
+				   if(mouseY<=maxY) {
+
+			   playWhoohoo();
+				   }
+			   }
+		   }
+	   }
+	  
+   }
     }
 
     static public void main(String[] args) {
         PApplet.main(WheresWaldo.class.getName());
+        
     }
 
     /*********************** DO NOT MODIFY THE CODE BELOW ********************/
