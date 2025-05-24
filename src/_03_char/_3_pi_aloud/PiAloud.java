@@ -2,13 +2,27 @@ package _03_char._3_pi_aloud;
 
 import java.util.Scanner;
 
+import game_tools.Sound;
+
 public class PiAloud {
-    /***********  SOUND ***************
-     * Some computers are unable to play sounds.
-     * If you cannot play sound on this computer, set canPlaySounds to false.
-     * If you are not sure, ask your teacher
-     * *****************/
-    boolean canPlaySounds = true;
+	/***********  SOUND ***************
+	 * Some computers are unable to play sounds.
+	 * If you cannot play sound on this computer, set canPlaySounds to false.
+	 * If you are not sure, ask your teacher
+	 * *****************/
+	boolean canPlaySounds = true;
+
+	public static void main(String[] args) {
+		String pi=("3.14159265358979323");
+		pi.charAt(0);
+		System.out.println(pi.charAt(0));
+		System.out.println(pi.charAt(1));
+		System.out.println(pi.charAt(2));
+		for (int i = 0; i < pi.length(); i++) {
+			System.out.println(pi.charAt(i));
+			Sound.speak(pi);
+		}
+	}
 
 
     // 1. Make a main method and make sure your program can run
